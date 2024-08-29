@@ -24,6 +24,12 @@ This is a Flask application that uses MediaPipe and OpenCV for real-time face re
 4. **Access the application**:
    Open your web browser and go to `http://127.0.0.1:5000/` to see the real-time camera feed.
 
+## Interface
+
+Here's a preview of the application's interface:
+
+![Application Interface](Screenshot.png)
+
 ## Dependencies
 
 - Flask
