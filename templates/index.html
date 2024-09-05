@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Recognition</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the main content */
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title styling */
+        h1 {
+            color: #5e60ce;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Image styling */
+        img {
+            border-radius: 15px;
+            border: 5px solid #5e60ce;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Face Recognition</h1>
-    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <div class="container">
+        <h1>Face Recognition</h1>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480" alt="Face Recognition Video">
+    </div>
 </body>
 </html>
